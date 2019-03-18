@@ -11,6 +11,12 @@
 		8446E867224018BA0024CC14 /* CollectionMapPicturesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8446E866224018BA0024CC14 /* CollectionMapPicturesController.swift */; };
 		8446E86C224018BC0024CC14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8446E86B224018BC0024CC14 /* Assets.xcassets */; };
 		8446E86F224018BC0024CC14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8446E86D224018BC0024CC14 /* LaunchScreen.storyboard */; };
+		8446E87822401A300024CC14 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8446E87722401A300024CC14 /* DataController.swift */; };
+		8446E87B22401AA10024CC14 /* Photo_Locations.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8446E87922401AA10024CC14 /* Photo_Locations.xcdatamodeld */; };
+		8446E88022401BFE0024CC14 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8446E87F22401BFE0024CC14 /* UIColor+Extension.swift */; };
+		8446E88222401C050024CC14 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8446E88122401C050024CC14 /* UIView+Extensions.swift */; };
+		8446E885224023320024CC14 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8446E884224023320024CC14 /* UIWindow+Extension.swift */; };
+		8446E887224023630024CC14 /* UNSYNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8446E886224023620024CC14 /* UNSYNC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		8446E86B224018BC0024CC14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8446E86E224018BC0024CC14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8446E870224018BC0024CC14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8446E87722401A300024CC14 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		8446E87A22401AA10024CC14 /* DownloadedPictureData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DownloadedPictureData.xcdatamodel; sourceTree = "<group>"; };
+		8446E87F22401BFE0024CC14 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		8446E88122401C050024CC14 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		8446E884224023320024CC14 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
+		8446E886224023620024CC14 /* UNSYNC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UNSYNC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +64,59 @@
 		8446E863224018BA0024CC14 /* _Virtual_Tourist */ = {
 			isa = PBXGroup;
 			children = (
+				8446E87622401A000024CC14 /* DATA */,
+				8446E87E22401B940024CC14 /* Models */,
+				8446E87D22401B890024CC14 /* Views */,
+				8446E87C22401B700024CC14 /* Controllers */,
 				8446E864224018BA0024CC14 /* AppDelegate.swift */,
-				8446E866224018BA0024CC14 /* CollectionMapPicturesController.swift */,
-				8446E86B224018BC0024CC14 /* Assets.xcassets */,
-				8446E86D224018BC0024CC14 /* LaunchScreen.storyboard */,
 				8446E870224018BC0024CC14 /* Info.plist */,
+				8446E886224023620024CC14 /* UNSYNC.swift */,
 			);
 			path = _Virtual_Tourist;
+			sourceTree = "<group>";
+		};
+		8446E87622401A000024CC14 /* DATA */ = {
+			isa = PBXGroup;
+			children = (
+				8446E883224022FE0024CC14 /* FLICKR */,
+				8446E87722401A300024CC14 /* DataController.swift */,
+				8446E87922401AA10024CC14 /* Photo_Locations.xcdatamodeld */,
+			);
+			path = DATA;
+			sourceTree = "<group>";
+		};
+		8446E87C22401B700024CC14 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8446E866224018BA0024CC14 /* CollectionMapPicturesController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8446E87D22401B890024CC14 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8446E884224023320024CC14 /* UIWindow+Extension.swift */,
+				8446E86D224018BC0024CC14 /* LaunchScreen.storyboard */,
+				8446E86B224018BC0024CC14 /* Assets.xcassets */,
+				8446E87F22401BFE0024CC14 /* UIColor+Extension.swift */,
+				8446E88122401C050024CC14 /* UIView+Extensions.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8446E87E22401B940024CC14 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8446E883224022FE0024CC14 /* FLICKR */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FLICKR;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,8 +189,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8446E88222401C050024CC14 /* UIView+Extensions.swift in Sources */,
 				8446E867224018BA0024CC14 /* CollectionMapPicturesController.swift in Sources */,
+				8446E87B22401AA10024CC14 /* Photo_Locations.xcdatamodeld in Sources */,
+				8446E885224023320024CC14 /* UIWindow+Extension.swift in Sources */,
+				8446E87822401A300024CC14 /* DataController.swift in Sources */,
 				8446E865224018BA0024CC14 /* AppDelegate.swift in Sources */,
+				8446E88022401BFE0024CC14 /* UIColor+Extension.swift in Sources */,
+				8446E887224023630024CC14 /* UNSYNC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +388,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8446E87922401AA10024CC14 /* Photo_Locations.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8446E87A22401AA10024CC14 /* DownloadedPictureData.xcdatamodel */,
+			);
+			currentVersion = 8446E87A22401AA10024CC14 /* DownloadedPictureData.xcdatamodel */;
+			path = Photo_Locations.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8446E859224018BA0024CC14 /* Project object */;
 }

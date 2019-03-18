@@ -12,13 +12,26 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var dataController = DataController(modelName: "Photo_Locations")
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        print(urls[urls.count-1] as URL)
+        
+        
+        dataController.load()
+        
+        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().barTintColor = UIColor.ghostWhite
+        
+        
+        let myMapController = CollectionMapPicturesController()
+        myMapController.dataController = dataController
         window = UIWindow()
         window?.makeKeyAndVisible()
-        window?.rootViewController = CollectionMapPicturesController()
+        window?.rootViewController = UINavigationController(rootViewController: myMapController)
         
         
         return true
