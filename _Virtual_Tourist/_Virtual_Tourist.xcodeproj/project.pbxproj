@@ -20,6 +20,7 @@
 		8446E889224027520024CC14 /* flickr.photos.search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8446E888224027520024CC14 /* flickr.photos.search.swift */; };
 		8446E88B2240275A0024CC14 /* flickr.photos.getInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8446E88A2240275A0024CC14 /* flickr.photos.getInfo.swift */; };
 		8446E88D224027620024CC14 /* flickr.photos.getSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8446E88C224027620024CC14 /* flickr.photos.getSizes.swift */; };
+		8446E88F224028300024CC14 /* FlickrClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8446E88E224028300024CC14 /* FlickrClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		8446E888224027520024CC14 /* flickr.photos.search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = flickr.photos.search.swift; sourceTree = "<group>"; };
 		8446E88A2240275A0024CC14 /* flickr.photos.getInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = flickr.photos.getInfo.swift; sourceTree = "<group>"; };
 		8446E88C224027620024CC14 /* flickr.photos.getSizes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = flickr.photos.getSizes.swift; sourceTree = "<group>"; };
+		8446E88E224028300024CC14 /* FlickrClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 		8446E883224022FE0024CC14 /* FLICKR */ = {
 			isa = PBXGroup;
 			children = (
+				8446E88E224028300024CC14 /* FlickrClient.swift */,
 				8446E88C224027620024CC14 /* flickr.photos.getSizes.swift */,
 				8446E88A2240275A0024CC14 /* flickr.photos.getInfo.swift */,
 				8446E888224027520024CC14 /* flickr.photos.search.swift */,
@@ -209,6 +212,7 @@
 				8446E865224018BA0024CC14 /* AppDelegate.swift in Sources */,
 				8446E88022401BFE0024CC14 /* UIColor+Extension.swift in Sources */,
 				8446E887224023630024CC14 /* UNSYNC.swift in Sources */,
+				8446E88F224028300024CC14 /* FlickrClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
