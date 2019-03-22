@@ -50,6 +50,16 @@ class FlickrClient {
         }
     }
     
+    class func getImageURLs(){
+        
+        
+        let url = Endpoints.photosSearch(<#T##Double#>, <#T##Double#>, <#T##Int#>, <#T##Int32#>)
+        
+        
+        
+        
+        
+    }
     
     
     
